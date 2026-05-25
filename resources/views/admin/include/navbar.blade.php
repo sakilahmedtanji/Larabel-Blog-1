@@ -9,28 +9,11 @@
               </a>
             </li>
             <li class="nav-item d-none d-md-block">
-              <a href="#" class="nav-link">Home</a>
+              <a href="{{url('/admin/dashboard')}}" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-md-block">
               <a href="#" class="nav-link">Contact</a>
             </li>
-          </ul>
-          <!--end::Start Navbar Links-->
-
-          <!--begin::End Navbar Links-->
-          <ul class="navbar-nav ms-auto">
-           
-
-            <!--begin::Fullscreen Toggle-->
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-lte-toggle="fullscreen">
-                <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
-                <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none"></i>
-              </a>
-            </li>
-            <!--end::Fullscreen Toggle-->
-
-           
           </ul>
           <!--end::End Navbar Links-->
         </div>

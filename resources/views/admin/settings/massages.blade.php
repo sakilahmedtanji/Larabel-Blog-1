@@ -15,10 +15,10 @@
                       <thead>
                         <tr>
                           <th style="width: 10px">#</th>
-                          <th>About me</th >
-                          <th>Facebook</th>
-                          <th>Twitter</th>
-                          <th>Github</th>
+                          <th>Name</th >
+                          <th>Gmail</th>
+                          <th>Number</th>
+                          <th>Massage</th>
                           <th>Action</th>
                         </tr>
                       </thead>

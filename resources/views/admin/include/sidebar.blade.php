@@ -10,6 +10,12 @@
               data-accordion="false"
               id="navigation"
             >
+            <li class="nav-item">
+                    <a href="{{url('/admin/dashboard')}}" class="nav-link">
+                      <i class="bi bi-bar-chart"></i>  
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
               <li class="nav-item">
                 <a href="#" class="nav-link active">
                   <i class="nav-icon bi bi-speedometer"></i>

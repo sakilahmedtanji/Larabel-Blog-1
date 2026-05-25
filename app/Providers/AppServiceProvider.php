@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use App\Models\settings;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use PhpParser\Node\Expr\Cast\Void_;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +22,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        View::composer('*', function($link){
+            $link->with('linkup', settings::first());
+        });
     }
+
 }

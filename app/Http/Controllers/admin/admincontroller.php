@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\blog;
 use App\Models\contactmassage;
 use App\Models\settings;
 use Illuminate\Http\Request;
@@ -15,7 +16,9 @@ class admincontroller extends Controller
         $this->middleware('auth');
     }
     public function dashboard(){
-        return view('admin.dashboard');
+        $blogcount= blog::count();
+        $massagecount= contactmassage::count();
+        return view('admin.dashboard',compact('blogcount','massagecount'));
     }
     public function adminlogout(){
         Auth::logout();

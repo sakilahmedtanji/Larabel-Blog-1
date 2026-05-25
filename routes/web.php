@@ -21,7 +21,7 @@ Route::get('/',[homepagecontroller::class,'index']);
 Route::get('/aboutme',[homepagecontroller::class,'aboutme']);
 Route::get('/contact',[homepagecontroller::class,'contact']);
 Route::post('/contactmassage',[homepagecontroller::class,'contactmassage']);
-Route::get('/post',[homepagecontroller::class,'posta']);
+Route::get('/post/{id}',[homepagecontroller::class,'posta']);
 Auth::routes([
     'register'=> false
 ]);
